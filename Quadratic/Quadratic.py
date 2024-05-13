@@ -1,3 +1,5 @@
+#Quadractics solver needs inputs in the format of ax^2 +bx + c where a, b, c = int
+
 from math import *
 
 def hcf(x, y, z):
