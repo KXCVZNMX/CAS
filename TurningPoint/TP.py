@@ -1,4 +1,13 @@
-def findtp(a : int, b : int, c : int): #return void
+'''
+TP calc takes 3 inputs in the form of ax^2 + bx + c
+where A, B, C are inputs.
+
+The calc returns the quadractics in the Turining point 
+form (Complete the square form) a(x + b)^2 + c, and gives
+the Minimum / Maximum for the parabola
+'''
+
+def findtp(a : int, b : int, c : int) -> None:
     coef : int = a
     negxnum : int = b
     negxden : int = 2 * coef
