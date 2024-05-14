@@ -25,7 +25,7 @@ def findtp(a : int, b : int, c : int) -> None:
         print(f'{coef} (x + {negx})^2 {y}')
     print("The turning point is:")
     if negx < 0:
-        print(f'({negx + (2 * negx)}, {y})')
+        print(f'({negx + abs((2 * negx))}, {y})')
     elif negx >= 0:
         print(f'(-{negx}, {y})')
     
