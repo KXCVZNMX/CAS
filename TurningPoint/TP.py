@@ -28,6 +28,12 @@ def findtp(a : int, b : int, c : float) -> None:
         print(f'({negx + abs((2 * negx))}, {y})')
     elif negx >= 0:
         print(f'(-{negx}, {y})')
+    try:
+        a : str = str(input("Again? y/n\n"))
+        if (a == 'y'):
+            findtp(int(input("int a: ")), int(input("int b: ")), float(input("int c: ")))
+    except ValueError:
+        print("bro huh")
     
 try:
     a = int(input("int a: "))
