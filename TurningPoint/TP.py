@@ -7,10 +7,10 @@ form (Complete the square form) a(x + b)^2 + c, and gives
 the Minimum / Maximum for the parabola
 '''
 
-def findtp(a : int, b : int, c : float) -> None:
-    coef : int = a
-    negxnum : int = b
-    negxden : int = 2 * coef
+def findtp(a : float, b : float, c : float) -> None:
+    coef : float = a
+    negxnum : float = b
+    negxden : float = 2 * coef
     negx : float = negxnum / negxden
     y : float = c - (negx ** 2 * coef)
     
@@ -36,8 +36,8 @@ def findtp(a : int, b : int, c : float) -> None:
         print("bro huh")
     
 try:
-    a = int(input("int a: "))
-    b = int(input("int b: "))
+    a = float(input("int a: "))
+    b = float(input("int b: "))
     c = float(input("int c: "))
     findtp(a, b, c)
 except ValueError:
